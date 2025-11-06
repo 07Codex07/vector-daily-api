@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Zomatos MCP Server: The AI Bridge Changing How We Order Food Forever",
+    "digest": "Zomatos MCP Server: The AI Bridge Changing How We Order Food Forever\n\nZomatos' Model Context Protocol (MCP) server is revolutionizing conversational commerce by connecting AI models like ChatGPT directly to real-world data and actions. This AI bridge acts as a translator, enabling AI to perform tasks like booking tables, ordering food, and more. The integration of MCP with Zomatos is set to change the future of food ordering forever.\n\nhttps://sahilv04.medium.com/zomatos-mcp-server-the-ai-bridge-changing-how-we-order-food-forever-e1419393d66d?source=rss------artificial_intelligence-5"
+  },
+  {
+    "title": "Outbidding and Outbluffing Elite Humans: Mastering Liar's Poker via\n  Self-Play and Reinforcement Learning",
+    "digest": "Outbidding and Outbluffing Elite Humans: Mastering Liar's Poker via Self-Play and Reinforcement Learning\n\nResearchers have created Solly, the first AI agent to achieve elite human play in reduced-format Liar's Poker, a game with extensive multi-player engagement. Solly uses self-play and a deep reinforcement learning algorithm to outperform large language models and world-class human players, winning over 50% of hands and adapting to various bidding strategies.\n\nhttp://arxiv.org/abs/2511.03724v1"
+  },
+  {
+    "title": "Artificial Intelligence in Healthcare: The New Frontier of Medicine",
+    "digest": "Artificial Intelligence in Healthcare: The New Frontier of Medicine\n\nArtificial Intelligence is revolutionizing healthcare by teaching machines to learn from data, recognize patterns, and make decisions faster and more accurately than humans. AI diagnostic tools can detect diseases like diabetic retinopathy and pneumonia with high accuracy, leading to quicker diagnoses and personalized care for every patient, making the medical landscape more efficient and compassionate.\n\nhttps://medium.com/@jujutsu.123ka4/artificial-intelligence-in-healthcare-the-new-frontier-of-medicine-4a3269b8e8ed?source=rss------artificial_intelligence-5"
+  },
+  {
+    "title": "The Complete Guide to ChatGPT Architecture: How AI Learned to Talk Like Us",
+    "digest": "The Complete Guide to ChatGPT Architecture: How AI Learned to Talk Like Us\n\nDiscover the magic behind ChatGPT's incredible abilities. From writing poetry to debugging code, the technology behind ChatGPT represents a significant AI breakthrough. We'll delve into its architecture, exploring how it understands context across 300,000 words, making it an integral part of our work, learning, and problem-solving. Learn how to harness its power and build even more amazing things.\n\nhttps://pub.towardsai.net/the-complete-guide-to-chatgpt-architecture-how-ai-learned-to-talk-like-us-dfc3f04d707f?source=rss----98111c9905da---4"
+  },
+  {
+    "title": "8LAI #100: Building Smarter Agents, Open Standards, and the Power of Tiny Models",
+    "digest": "8LAI #100: Building Smarter Agents, Open Standards, and the Power of Tiny Models\n\nDiscover how AI systems are evolving to reason, cooperate, and communicate more effectively. This week's newsletter takes you through building a ReAct agent from scratch, emerging standards for agentic interoperability, and the surprising power of tiny models that outperform giant LLMs on reasoning tasks. Get insights into the latest advancements shaping the future of AI.\n\nhttps://pub.towardsai.net/8lai-100-building-smarter-agents-open-standards-and-the-power-of-tiny-models-dee8290481ea?source=rss----98111c9905da---4"
+  },
+  {
+    "title": "Grounded Misunderstandings in Asymmetric Dialogue: A Perspectivist\n  Annotation Scheme for MapTask",
+    "digest": "Grounded Misunderstandings in Asymmetric Dialogue: A Perspectivist Annotation Scheme for MapTask\n\nResearchers have developed a new annotation scheme to better understand how people establish common ground in collaborative dialogue, especially in situations where one person may think they agree while referring to different things. Using this scheme, they analyzed thousands of conversations and found that apparent understanding can mask underlying referential misalignments, providing new insights into how we communicate. \n\nhttp://arxiv.org/abs/2511.03718v1"
+  },
+  {
+    "title": "Streaming datasets: 100x More Efficient",
+    "digest": "Streaming datasets: 100x More Efficient\n\nThe Hugging Face Datasets library has improved streaming capabilities, enabling efficient loading of massive datasets without the need for downloads. This update boosts performance by 100x, reduces requests, and improves data resolution. The changes are backwards compatible, making it easy to start training on large-scale datasets immediately with a single line of code. \nhttps://huggingface.co/blog/streaming-datasets"
+  },
+  {
+    "title": "Building the Open Agent Ecosystem Together: Introducing OpenEnv",
+    "digest": "Building the Open Agent Ecosystem Together: Introducing OpenEnv\n\nMeta and Hugging Face are launching the OpenEnv Hub, a shared community hub for agentic environments. These environments provide a secure, sandboxed space for AI agents to perform tasks, defining the necessary tools, APIs, and credentials. The OpenEnv Hub aims to bring clarity and safety to agent behavior, making it easier to develop and deploy scalable agentic systems.\n\nhttps://huggingface.co/blog/openenv"
+  }
+]

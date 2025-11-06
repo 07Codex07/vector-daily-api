@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+newspaper3k
+groq
+python-dotenv
+yfinance
+pandas
+numpy
