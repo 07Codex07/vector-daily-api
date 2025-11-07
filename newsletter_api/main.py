@@ -37,3 +37,7 @@ def get_subscribers():
 @app.get("/")
 def root():
     return {"message": "Welcome to The Vector Daily Newsletter API!"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok", "message": "Server is running"}
