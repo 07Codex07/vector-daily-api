@@ -1,7 +1,7 @@
 import sqlite3
 import os
 
-DB_PATH = os.path.join(os.getcwd(), "subscribers.db")
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "subscribers.db")
 
 def init_db():
     """Initialize the database and create the subscribers table if it doesn't exist."""
