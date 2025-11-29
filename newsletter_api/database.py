@@ -8,9 +8,17 @@ load_dotenv()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
+def get_conn():
+    """Helper: get a new DB connection."""
+    return psycopg2.connect(DATABASE_URL, cursor_factory=RealDictCursor)
+
+
+# ======================================================
+# INIT
+# ======================================================
 def init_db():
     """Initialize the subscribers table if not exists."""
-    conn = psycopg2.connect(DATABASE_URL, cursor_factory=RealDictCursor)
+    conn = get_conn()
     cur = conn.cursor()
     cur.execute("""
         CREATE TABLE IF NOT EXISTS subscribers (
@@ -21,20 +29,54 @@ def init_db():
     conn.commit()
     conn.close()
 
+
+# ======================================================
+# SUBSCRIBE
+# ======================================================
 def add_subscriber(email: str):
     """Add a new subscriber email (ignore duplicates)."""
-    conn = psycopg2.connect(DATABASE_URL, cursor_factory=RealDictCursor)
+    conn = get_conn()
     cur = conn.cursor()
     cur.execute("""
-        INSERT INTO subscribers (email) VALUES (%s)
+        INSERT INTO subscribers (email)
+        VALUES (%s)
         ON CONFLICT (email) DO NOTHING;
     """, (email,))
     conn.commit()
     conn.close()
 
+
+# ======================================================
+# CHECK
+# ======================================================
+def is_subscribed(email: str) -> bool:
+    """Return True if email exists in DB."""
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute("SELECT 1 FROM subscribers WHERE email = %s;", (email,))
+    exists = cur.fetchone() is not None
+    conn.close()
+    return exists
+
+
+# ======================================================
+# UNSUBSCRIBE
+# ======================================================
+def remove_subscriber(email: str):
+    """Remove a subscriber email."""
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute("DELETE FROM subscribers WHERE email = %s;", (email,))
+    conn.commit()
+    conn.close()
+
+
+# ======================================================
+# FETCH ALL
+# ======================================================
 def get_all_subscribers():
     """Return all subscriber emails."""
-    conn = psycopg2.connect(DATABASE_URL, cursor_factory=RealDictCursor)
+    conn = get_conn()
     cur = conn.cursor()
     cur.execute("SELECT email FROM subscribers;")
     rows = [r["email"] for r in cur.fetchall()]
